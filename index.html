@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- This is CSS file linked with HTML -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Rock Paper Scissors</h1>
+    <!-- This Container contains all Imgages inside each Div -->
+    <div class="container">
+        <!-- Rock Div -->
+        <div class="imgContainer" id="rock">
+            <img src="Images/rock.png" alt="">
+        </div>
+        <!-- Paper Div -->
+        <div class="imgContainer" id="paper">
+            <img src="Images/paper.png" alt="">
+        </div>
+        <!-- Scissors Div -->
+        <div class="imgContainer" id="scissors">
+            <img src="Images/scissors.png" alt="">
+        </div>
+    </div>
+    <!-- Score-Board to display user and computer scores, which will keep updating by the help of JS -->
+    <div class="score-Board">
+        <!-- This Div containes user(Human) name and it's score -->
+        <div id="user">
+            <p id="user-Score">0</p>
+            <p>You</p>
+        </div>
+        <!-- This Div conatines Computer name and it's score -->
+        <div id="Comp">
+            <p id="comp-Score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+    <!-- This div contain the message which also keeps updating with current result of game -->
+    <div class="msg-Container">
+        <div id="msg">Your Move!</div>
+    </div>
+    <!-- Reset Button to set game at initial phase -->
+    <div id="btn-Container" class="hide">
+        <button>Reset Game</button>
+    </div>
+    <!-- JavaScript file linked to HTML -->
+<script src="app.js"></script>  
+</body>
+</html>

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Heading */
+h1{
+    height: 5rem;
+    background-color: #181818;
+    color: white;
+    line-height: 5rem;
+    word-spacing: 1rem;
+}
+
+/* It Contains all three div which contains each Images */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+/* Body Style */
+body{
+    background-color: lightcyan;
+}
+
+/* This contain Images */
+.imgContainer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* It allows to change background color when cursor is placed inside img_Container */
+.imgContainer:hover{
+    background-color: #181818;
+    cursor: pointer;
+    border-radius: 40%;
+    transition: 0.2s;
+}
+
+/* It provide styling to Images */
+img{
+    height: 155px;
+    width: 155px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* When you place cursor to image this style impliments */
+img:hover{
+    border-radius: 40%;
+    transition: 0.2s;
+}
+
+/* This style will be Impliments on score and user/computer name */
+.score-Board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+/* This style will be implies on Score only just to make them larg enough so make it outstanding to all players */
+#user-Score, #comp-Score{
+    font-size: 5rem;
+    text-shadow: 0.5rem 0rem 0.5rem rgba(76, 53, 53, 0.5);
+}
+
+/* This contain message */
+.msg-Container{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* This will give some style to our message of this game */
+#msg{
+    background-color: #181818;
+    color: white;
+    display: inline;
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+/* Div which contain Button */
+#btn-Container{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Reset Button */
+button{
+    border: none;
+    background-color: #181818;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+/* This hide the button until game start */
+.hide{
+    display: none;
+}
